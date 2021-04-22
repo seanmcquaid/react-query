@@ -14,9 +14,7 @@ const queryClient = new QueryClient({
 });
 
 const RandomQuotes = lazy(() => import('./containers/RandomQuotes'));
-const GenerateRandomQuote = lazy(() =>
-  import('./containers/GenerateRandomQuote')
-);
+const QuotesByTitle = lazy(() => import('./containers/QuotesByTitle'));
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -24,7 +22,7 @@ const App = () => (
       <H1>Anime Quotes</H1>
     </header>
     <Suspense fallback={<P>Loading</P>}>
-      <GenerateRandomQuote />
+      <QuotesByTitle />
     </Suspense>
     <Suspense fallback={<P>Loading</P>}>
       <RandomQuotes />

@@ -1,6 +1,6 @@
 import { useQuery } from 'react-query';
 import { getRandomQuotes } from '../../queries';
-import Anime from './Anime';
+import Anime from '../../components/Anime';
 import uuid from 'react-uuid';
 
 const RandomQuotes = () => {

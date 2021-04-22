@@ -1,4 +1,4 @@
-import P from '../../components/Typography/P';
+import P from './Typography/P';
 
 const Anime = ({ anime, character, quote }) => (
   <div>
