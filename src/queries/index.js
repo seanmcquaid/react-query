@@ -5,7 +5,7 @@ export const getRandomQuotes = async () => {
   return data;
 };
 
-export const getRandomQuoteByTitle = async (title = '') => {
+export const getQuotesByTitle = async (title = '') => {
   const { data } = await axios.get(
     `https://animechan.vercel.app/api/quotes/anime?title=${title}`
   );
